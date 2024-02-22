@@ -1,7 +1,5 @@
 body {
-    background-color: rgb(147, 51, 245);
-    margin: 0;
-    padding: 0;
+    background-color: rgb(120, 15, 224);
 }
 
 .container {
@@ -9,29 +7,17 @@ body {
     display: flex;
     background-color: rgb(156,89,244);
     margin: 100px auto;
+    margin-top: 60px;
     margin-bottom: 0;
-    border-radius: 10px;
     width: 1250px;
     height: 580px;
     overflow: hidden;
     border-radius: 60px;
+    box-shadow: 60 100px 200px rgba(0, 0, 0, .1);
 }
-
-.container:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
-    backdrop-filter: blur(10px); /* Add blur effect */
-    z-index: -1;
-}
-
 
 .left {
-    width: 70%;
+    width: 60%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -54,9 +40,13 @@ body {
 }
 
 .right {
-    width: 30%;
-    padding: 20px;
+    width: 40%;
+    padding: 70px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
 }
 
 form {
@@ -65,13 +55,27 @@ form {
     text-align: center;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"] {
-    margin-bottom: 10px;
+.welcome {
+    background-color: rgb(120,15,224);
+    border-radius: 30px;
+    margin: 0;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 45px;
 }
 
-input[type="submit"],
-input[type="reset"] {
-    margin-top: 10px;
+.underline-input {
+    border: none;
+    border-bottom: 1px solid black; /* Adjust color and style as needed */
+    outline: none;
+    padding: 5px 0; /* Adjust as needed */
+    left: 0;
+    margin-bottom: 30px;
 }
+
+label{
+    align-self: left;
+}
+

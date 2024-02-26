@@ -22,7 +22,8 @@ const renderCard = () => {
     cardMediaIcon.classList.remove("loading");
   });
 
-  //Show the hidden html elements
+  //Show the hidden html elements.
+  // show the hidden html elements.
   cardImgs.forEach((cardImg) => {
     cardImg.style.visibility = "visible";
   });
